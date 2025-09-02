@@ -1,12 +1,98 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quarta Asa</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="site de informações sobre quarta asa">
+  <title>Quarta Asa - Meu livro favorito</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <h1>Olá mundo</h1>
-    <p>Só pra dar sorte!</p>
+  <header class="cabecalho">
+    <a href="index.html"><img class="cabecalho-imagem" src="/imagem/iconmeusite.png" alt="dois dragões se enfrentando" width="50px"></a>
+    <nav>
+      <a class="cabecalho-menu-item" href="personagens.html">Personagens</a>
+      <a class="cabecalho-menu-item" href="dragao.html">Dragões</a>
+      <a class="cabecalho-menu-item" href="universo.html">Universo</a>
+    </nav>
+  </header>
+
+  <div>
+    <h1>Empiryano</h1>
+  </div>
+
+  <main>
+    <section>
+      <h2>Quarta Asa</h2>
+      <img src="imagem/quarta-asa.jpeg" alt="Capa do Livro Quarta Asa" width="100px">
+      <p>
+        O primeiro livro da série. Conhecemos a história de Violet Sorrengail, que tem o sonho de ser escriba, mas é
+        obrigada por sua mãe a se juntar ao Quadrante de Cavaleiros, onde a vida é um teste de força e sobrevivência.
+        Ela não apenas sobrevive, mas também encontra amizades, inimigos e um amor proibido, enquanto enfrenta dragões e
+        um sistema projetado para falhar com ela.
+      </p>
+      <a href="https://www.amazon.com.br/Quarta-asa-Rebecca-Yarros/dp/8542225856/ref=asc_df_8542225856?mcid=86a70d9f50373cd2b3c0effadaac09e5&tag=googleshopp00-20&linkCode=df0&hvadid=709883381737&hvpos=&hvnetw=g&hvrand=2535553193070487491&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9208188&hvtargid=pla-2273178058542&psc=1&language=pt_BR&gad_source=1"
+        target="_blank">
+        Compre agora
+      </a>
+    </section>
+
+    <section>
+      <h2>Chama de Ferro</h2>
+      <img src="imagem/chama-de-ferro.jpg" alt="Capa do livro Chama de Ferro" width="100px">
+      <p>
+        O segundo livro da série, que continua a jornada de Violet, agora como uma cavaleira. Ela tem que enfrentar as
+        consequências de suas escolhas e lidar com novas ameaças que podem colocar em risco a vida de todos no Instituto.
+      </p>
+      <a href="https://www.amazon.com.br/Chama-Ferro-sequência-fenômeno-Empyriano/dp/8542227808/ref=pd_bxgy_thbs_d_sccl_1/134-3236571-4038704?pd_rd_w=aM7lI&content-id=amzn1.sym.ea5263f5-901f-4a74-9b73-3fc0e530788d&pf_rd_p=ea5263f5-901f-4a74-9b73-3fc0e530788d&pf_rd_r=D08J0SZWTZDXK16344W3&pd_rd_wg=EgmPW&pd_rd_r=250c2a97-6517-4cb2-bda0-ff85e33f9e0b&pd_rd_i=8542227808&psc=1"
+        target="_blank">
+        Compre agora
+      </a>
+    </section>
+
+    <section>
+      <h2>Tempestade de Ônix</h2>
+      <img src="imagem/tempestade-de-onix.jpg" alt="Capa do livro Tempestade de Onix" width="100px">
+      <p>
+        O terceiro e aguardado livro da série, que promete aprofundar a guerra contra os venin e revelar ainda mais
+        segredos sobre o passado do Instituto de Guerra de Basgiath.
+      </p>
+      <a href="https://www.amazon.com.br/Tempestade-Ônix-Sequência-fenômenos-Empyriano/dp/8542229177/ref=pd_bxgy_thbs_d_sccl_1/134-3236571-4038704?pd_rd_w=jqXNe&content-id=amzn1.sym.ea5263f5-901f-4a74-9b73-3fc0e530788d&pf_rd_p=ea5263f5-901f-4a74-9b73-3fc0e530788d&pf_rd_r=8509WM8S06C32Q3V9H27&pd_rd_wg=dzULl&pd_rd_r=13be168a-5a52-4d82-ad77-5b8634145884&pd_rd_i=8542229177&psc=1"
+        target="_blank">
+        Compre agora
+      </a>
+    </section>
+
+    <br>
+
+    <form>
+      <fieldset>
+        <legend>Informações de contato</legend>
+
+        <label for="nome">Nome</label>
+        <input type="text" id="nome"><br>
+
+        <label for="email">Email</label>
+        <input type="email" id="email"><br>
+
+        <label for="tel">Tel.:</label>
+        <input type="tel" id="tel"><br>
+
+        <label for="comentario">Comentário</label><br>
+        <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea><br><br>
+
+        <button type="submit">Enviar</button>
+      </fieldset>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; Todos os direitos reservados</p>
+  </footer>
 </body>
+
 </html>
