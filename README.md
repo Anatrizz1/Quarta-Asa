@@ -25,12 +25,6 @@ Este projeto é um site simples e estático em **HTML** e **CSS**, criado para c
 - **CSS3**  
 - **Google Fonts** (font family: Cinzel)
 
-## Acesso via GitHub Pages
-
-O site está disponível publicamente e pode ser acessado por meio do GitHub Pages neste link:
-
-https://anatrizz1.github.io/Quarta-Asa/
-
 ## Possíveis Melhorias Futuras
 
 - Adicionar **responsividade** para dispositivos móveis.  
