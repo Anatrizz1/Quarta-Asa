@@ -187,3 +187,81 @@ footer {
     width: 100%;
     margin-top: 20px; /* Espaço acima do rodapé */
 }
+/* Estilos para o Pop-up */
+#popup-container {
+    display: none; /* Esconde o pop-up por padrão */
+    position: fixed; /* Fica fixo na tela, sem rolar */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Fundo preto semi-transparente */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Garante que fique acima de todo o resto */
+}
+
+.popup-conteudo {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+#imagem-ampliada {
+    max-width: 100%;
+    max-height: 100%;
+    display: block; /* Remove espaços extras */
+}
+
+.fechar-popup {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+    z-index: 1001; /* Fica acima da imagem ampliada */
+}
+
+.fechar-popup:hover,
+.fechar-popup:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Media Query para telas de no máximo 768px (tablets e celulares) */
+@media (max-width: 768px) {
+    /* Regras para o cabeçalho em telas menores */
+    .cabecalho {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Regras para o menu em telas menores */
+    .cabecalho nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    h1 {
+        font-size: 3em; /* Reduz o tamanho do H1 para telas menores */
+    }
+
+    /* Regras para as seções (os quadradinhos dos livros) em telas menores */
+    section {
+        width: 90%; /* Ocupa 90% da largura da tela para ter um pequeno espaçamento nas laterais */
+        margin: 10px auto; /* Centraliza a caixa com espaçamento */
+    }
+    
+    /* Regras para as imagens em telas menores */
+    section img {
+        width: 100%; /* Garante que a imagem se ajuste ao novo tamanho da seção */
+    }
+    form {
+        width: 80%; /* Ajusta a largura do formulário para telas menores */
+    }
+}

@@ -2,37 +2,43 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="description" content="site de informações sobre quarta asa">
-  <title>Quarta Asa - Meu livro favorito</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="description" content="site de informações sobre quarta asa">
+    <title>Quarta Asa - Meu livro favorito</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <header class="cabecalho">
-    <a href="index.html"><img class="cabecalho-imagem" src="imagem/iconmeusite.png" alt="dois dragões se enfrentando" width="50px"></a>
-    <nav>
-      <a class="cabecalho-menu-item" href="personagens.html">Personagens</a>
-      <a class="cabecalho-menu-item" href="dragao.html">Dragões</a>
-      <a class="cabecalho-menu-item" href="universo.html">Universo</a>
-    </nav>
-  </header>
+    <header class="cabecalho">
+        <a href="index.html"><img class="cabecalho-imagem" src="imagem/iconmeusite.png" alt="dois dragões se enfrentando" width="50px"></a>
+        <nav>
+            <a class="cabecalho-menu-item" href="personagens.html">Personagens</a>
+            <a class="cabecalho-menu-item" href="dragao.html">Dragões</a>
+            <a class="cabecalho-menu-item" href="universo.html">Universo</a>
+        </nav>
+    </header>
 
-  <div>
     <h1>Universo</h1>
-  </div>
 
-  <main>
-    <section>
-      <h2>Mapa</h2>
-      <a href="imagem/mapa-quarta-asa.webp" target="_blank">
-            <img src="imagem/mapa-quarta-asa.webp" alt="MAPA Basgiath" width="5000px">
-      </a>
-      <p>
-        Descubra a geografia complexa e os territórios de Basgiath, o lar do Quadrante de Cavaleiros e palco dos eventos da série.
-      </p>
-    
-    </section>
+    <main>
+        <section>
+            <h2>Mapa</h2>
+            <img src="imagem/mapa-quarta-asa.webp" alt="MAPA Basgiath">
+            <p>
+                Descubra a geografia complexa e os territórios de Basgiath, o lar do Quadrante de Cavaleiros e palco dos eventos da série.
+            </p>
+        </section>
+    </main>
+
+    <div id="popup-container">
+        <div class="popup-conteudo">
+            <span class="fechar-popup">&times;</span>
+            <img id="imagem-ampliada" src="" alt="Imagem ampliada do mapa">
+        </div>
+    </div>
+    <script src="universo.js"></script>
+</body>
+</html>
