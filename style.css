@@ -232,7 +232,7 @@ footer {
     cursor: pointer;
 }
 
-/* Media Query para telas de no máximo 768px (tablets e celulares) */
+/* Media Query para telas de no máximo 768px (tablets) */
 @media (max-width: 768px) {
     /* Regras para o cabeçalho em telas menores */
     .cabecalho {
@@ -263,5 +263,27 @@ footer {
     }
     form {
         width: 80%; /* Ajusta a largura do formulário para telas menores */
+    }
+}
+
+/* Media Query para telas de no máximo 480px (celulares) */
+@media (max-width: 480px) {
+    .cabecalho {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px; /* Reduz o padding do cabeçalho */
+    }
+
+    .cabecalho-menu-item {
+        font-size: 1em; /* Reduz o tamanho da fonte do menu */
+    }
+
+    h1 {
+        font-size: 3em; /* Reduz o tamanho do título principal */
+    }
+
+    section {
+        width: 100%; /* Ocupa 100% da largura em celulares */
+        padding: 10px;
     }
 }
