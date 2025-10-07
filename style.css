@@ -72,7 +72,6 @@ h2, h3 {
 main {
     /* text-align: center; Removido, pois o Flexbox já centraliza */
     display: flex;
-    flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
@@ -111,13 +110,8 @@ section img {
     /* Define a largura máxima para a imagem */
     max-width: 100%;
 
-    /* Define a altura máxima para a imagem */
-    max-height: 300px; /* Você pode ajustar este valor */
 
-    /* Garante que a imagem mantenha suas proporções originais */
-    height: auto; 
-    
-    /* Outros estilos que você já tem */
+    max-height: 300px; /* Você pode ajustar este valor */    height: auto; 
     border: 2px solid #a00;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     margin-bottom: 15px;
@@ -232,58 +226,75 @@ footer {
     cursor: pointer;
 }
 
-/* Media Query para telas de no máximo 768px (tablets) */
+/* ========================================================= */
+/* Media Query 1: Para telas de até 768px (Tablets e Celulares) */
+/* ========================================================= */
 @media (max-width: 768px) {
-    /* Regras para o cabeçalho em telas menores */
-    .cabecalho {
-        flex-direction: column;
-        gap: 10px;
+    /* AJUSTES GERAIS */
+    body {
+        font-size: 14px; /* Reduz um pouco o tamanho da fonte base */
     }
 
-    /* Regras para o menu em telas menores */
+    /* CABEÇALHO E NAVEGAÇÃO */
+    .cabecalho {
+        flex-direction: column; /* Itens do cabeçalho um abaixo do outro */
+        padding: 15px 20px;
+        gap: 15px;
+    }
+
     .cabecalho nav {
-        flex-direction: column;
+        flex-direction: column; 
         align-items: center;
         gap: 10px;
     }
-    
+
+    /* TÍTULOS */
     h1 {
-        font-size: 3em; /* Reduz o tamanho do H1 para telas menores */
+        font-size: 4em; /* Reduz o tamanho do H1 em telas médias */
+        margin-top: 30px;
+    }
+    
+    h2 {
+        font-size: 2em; /* Reduz o tamanho do H2 */
     }
 
-    /* Regras para as seções (os quadradinhos dos livros) em telas menores */
+    /* SEÇÕES DE CONTEÚDO (LIVROS/PERSONAGENS) */
+     main {
+        flex-direction: column; 
+        align-items: center;    
+        padding: 10px;
+    }
+
     section {
-        width: 90%; /* Ocupa 90% da largura da tela para ter um pequeno espaçamento nas laterais */
-        margin: 10px auto; /* Centraliza a caixa com espaçamento */
-    }
-    
-    /* Regras para as imagens em telas menores */
-    section img {
-        width: 100%; /* Garante que a imagem se ajuste ao novo tamanho da seção */
-    }
-    form {
-        width: 80%; /* Ajusta a largura do formulário para telas menores */
+        width: 90%; 
+        margin: 15px auto;
     }
 }
 
-/* Media Query para telas de no máximo 480px (celulares) */
+
+/* ========================================================= */
+/* Media Query 2: Para telas de até 480px (Celulares Pequenos) */
+/* ========================================================= */
 @media (max-width: 480px) {
-    .cabecalho {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px; /* Reduz o padding do cabeçalho */
-    }
-
-    .cabecalho-menu-item {
-        font-size: 1em; /* Reduz o tamanho da fonte do menu */
-    }
-
+    /* TÍTULOS */
     h1 {
-        font-size: 3em; /* Reduz o tamanho do título principal */
+        font-size: 3em; /* Reduz o H1 ainda mais para não quebrar */
+        margin-top: 20px;
     }
 
+    /* MENU DE NAVEGAÇÃO */
+    .cabecalho-menu-item {
+        font-size: 1em; /* Fonte menor no menu */
+    }
+
+    /* SEÇÕES DE CONTEÚDO */
     section {
-        width: 100%; /* Ocupa 100% da largura em celulares */
-        padding: 10px;
+        width: 95%; /* Ocupa quase a tela toda */
+        padding: 15px;
+    }
+
+    /* FORMULÁRIO */
+    form {
+        width: 90%; /* Garante que o formulário se ajuste bem */
     }
 }
