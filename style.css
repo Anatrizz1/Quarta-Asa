@@ -145,16 +145,19 @@ section a:hover {
 }
 
 form {
-    display: flex;
-    flex-direction: column;
+    display: flex; /* DEVE ESTAR AQUI */
+    flex-direction: column; /* DEVE ESTAR AQUI */
+    align-items: center;
     gap: 10px;
-    width: 30%;
+    /* Adicione um max-width aqui para telas grandes */
+    max-width: 400px; 
     text-align: center;
-    margin: 0 auto; /* Centraliza o formulário na página */
+    margin: 40px auto; /* Centraliza o formulário em todas as telas */
     padding: 20px;
-    background-color: #2a2a2a;  
+    background-color: #2a2a2a;  
     border: 2px solid #ff4500;
     border-radius: 10px;
+    /* Remova a propriedade width: 30% que você tinha antes, se tiver, e use max-width */
 }
 
 button {
@@ -235,9 +238,9 @@ footer {
         font-size: 14px; /* Reduz um pouco o tamanho da fonte base */
     }
 
-    /* CABEÇALHO E NAVEGAÇÃO */
-    .cabecalho {
-        flex-direction: column; /* Itens do cabeçalho um abaixo do outro */
+   .cabecalho {
+        flex-direction: column; 
+        align-items: center; /* Centraliza tudo (logo e menu) */
         padding: 15px 20px;
         gap: 15px;
     }
@@ -246,7 +249,14 @@ footer {
         flex-direction: column; 
         align-items: center;
         gap: 10px;
+        width: 100%; /* Garante que a NAV ocupe a largura total */
     }
+
+    .cabecalho-menu-item {
+        /* Adicione espaçamento para cada link ficar mais fácil de clicar no celular */
+        padding: 5px 0; 
+    }
+    
 
     /* TÍTULOS */
     h1 {
@@ -269,6 +279,14 @@ footer {
         width: 90%; 
         margin: 15px auto;
     }
+
+      /* AJUSTE DO FORMULÁRIO */
+    form {
+        width: 90%; /* Ocupa 90% da largura da tela, alinhando com as Seções */
+        margin: 20px auto; /* Centraliza o formulário */
+        /* Remova o "display: flex; flex-direction: column" daqui se estiver fora do @media, pois ele já é vertical */
+    }
+
 }
 
 
