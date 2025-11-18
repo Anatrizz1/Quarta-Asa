@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -69,22 +70,30 @@
 
     <br>
 
-    <form>
+  <form class="formulario-contato">
       <fieldset>
         <legend>Informações de contato</legend>
 
-        <label for="nome">Nome</label>
-        <input type="text" id="nome"><br>
+        <div class="campo-form">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome">
+        </div>
 
-        <label for="email">Email</label>
-        <input type="email" id="email"><br>
+        <div class="campo-form">
+          <label for="email">Email</label>
+          <input type="email" id="email">
+        </div>
 
-        <label for="tel">Tel.:</label>
-        <input type="tel" id="tel"><br>
+        <div class="campo-form">
+          <label for="tel">Tel.:</label>
+          <input type="tel" id="tel">
+        </div>
 
-        <label for="comentario">Comentário</label><br>
-        <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea><br><br>
-
+        <div class="campo-form">
+          <label for="comentario">Comentário</label>
+          <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
+        </div>
+        
         <button type="submit">Enviar</button>
       </fieldset>
     </form>
