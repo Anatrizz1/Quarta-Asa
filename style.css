@@ -75,7 +75,7 @@ main {
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
-    padding: 20px; /* Adicionado padding para que o conteúdo não fique colado nas bordas
+    padding: 20px; /* Adicionado padding para que o conteúdo não fique colado nas bordas */
     margin-bottom: 40px; /* Espaço abaixo do main */
 }
 
